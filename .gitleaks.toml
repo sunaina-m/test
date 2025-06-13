@@ -1,0 +1,18 @@
+[allowlist]
+description = "Allowlist for DevSecOps Hackathon"
+paths = [
+    "SECURITY_FIXES.md",
+    "README.md"
+]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS Access Key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["key", "AWS"]
+
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key"
+regex = '''(?i)(api[_-]?key|apikey|secret)['"]?\s*[:=]\s*['"]?([a-zA-Z0-9]{32,45})['"]?'''
+tags = ["key", "API"] 

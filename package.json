@@ -1,0 +1,16 @@
+{
+  "name": "devsecops-hackathon-app",
+  "version": "1.0.0",
+  "description": "Intentionally vulnerable Node.js microservice for DevSecOps hackathon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
